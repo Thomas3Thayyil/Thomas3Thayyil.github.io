@@ -8,11 +8,8 @@
 <style>
 
 .image{
-display: block;
-width: 75%;
-margin: auto;
-height: auto;
-position: relative;
+display: flex;
+flex-direction: column;
 }
 
 .text{
@@ -33,7 +30,11 @@ text-shadow: 2px 2px #000000;
 <title>GM message</title>
 </head>
 <body>
-<img src="Pic.jpg" class="image">
+<div class="image">
+<img src="Pic.jpg">
+<img src="Pic.jpg">
+<img src="Pic.jpg">
+</div>
 <p class="text">
 The Great Commission (Matthew 28:19-20)
 <br><i>
