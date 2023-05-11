@@ -6,43 +6,46 @@
      crossorigin="anonymous"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-     
+
 <style>
+		.popup {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			z-index: 9999;
+		}
+		.popup .close {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #ccc;
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		function closePopup() {
+			document.getElementById("popup").style.display = "none";
+		}
+	</script>
 
-.image{
-display: block;
-width: 33%;
-height: auto;
-}
-
-.text{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-text-align: center;
-font-size: 20px;
-font-weight: bold;
-font-family: Copperplate Gothic;
-text-shadow: 2px 2px #000000;
-}
-
-</style>
-
-<title>GM message</title>
+<title>Trial</title>
 </head>
-<body>
-<div class="image">
-<img src="Pic.jpg">
-</div>
-<p class="text">
-The Great Commission (Matthew 28:19-20)
-<br><i>
-“Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.”
-</i><br><br><br><br>
-The love of Jesus is for all. In these difficult times, it is important that we stand by each other and spread the love of Jesus. Send this to 12 people whom you care dearly about, each dedicated to a disciple of our Saviour for a blessed week ahead.<br> May God bless you!
-</p>
+     
+<body onload="document.getElementById('popup').style.display='block';">
+	<div class="popup" id="popup">
+		<span class="close" onclick="closePopup();">&times;</span>
+		<p>This is a pop-up dialog box that appears when the webpage loads or refreshes. Click the "x" button to close it.</p>
+	</div>
+     
+<img src="Pic.jpg" style="display: block">
+
 
 <!-- Default Statcounter code for Trial Message
 https://ttt3.online/ -->
