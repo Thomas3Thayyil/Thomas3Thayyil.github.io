@@ -1,0 +1,25 @@
+img
+{
+    height: 563px;
+    width: 100%;
+}
+
+#p1
+{
+    font-family: sans-serif;
+    background: linear-gradient(to right, purple, red, maroon);
+    position: absolute;
+    transform: translateY(180px);
+    color: antiquewhite;
+    font-size: 27px;
+}
+
+#p2
+{
+    font-family: sans-serif;
+    background: linear-gradient(to right, purple, red, maroon);
+    position: absolute;
+    transform: translateY(-360px);
+    color: antiquewhite;
+    font-size: 27px;
+}
