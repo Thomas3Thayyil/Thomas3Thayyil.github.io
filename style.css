@@ -1,6 +1,6 @@
 img
 {
-    height: 33.333%;
+    height: 30%;
     width: 100%;
 }
 
@@ -10,7 +10,7 @@ img
     background: linear-gradient(to right, #37611D, #42AD00);
     position: absolute;
     color: antiquewhite;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #p2
@@ -18,7 +18,7 @@ img
     font-family: sans-serif;
     background: linear-gradient(to right, #37611D, #42AD00);
     position: absolute;
-    transform: translateY(-285px);
+    transform: translateY(-273px);
     color: antiquewhite;
     font-size: 21px;
 }
